@@ -1,0 +1,21 @@
+#!/bin/sh
+
+
+# $1 is the zip file name
+
+
+file="$1"
+echo $file
+filename="${file%.*}"
+unzip -d $filename $file
+cd $filename
+foldername=`ls -d */`
+folder="${foldername%/*}"
+echo $folder
+hashvalue="${folder##* }"
+myfilename="${folder% *}"
+echo $myfilename
+sed -i "s/$hashvalue//g" "$folder.md"
+
+mv  "$folder" "$myfilename "
+mv "$folder.md" "$myfilename.md"

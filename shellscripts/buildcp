@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "compiling from"
+echo  "${PWD}/$1"  
+g++ ${PWD}/$1 -g
+./a.out < input.txt > output.txt 
+

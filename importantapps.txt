@@ -1,0 +1,13 @@
+1. notion 
+2. neovim
+3. Inkscape
+4. Teams
+5. spotify
+6. Xournal++
+7. zathura
+8. zoom
+9. Typora 
+10. Sublime
+11. Discord
+12. VSCode
+13. Stacer
